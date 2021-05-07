@@ -1,0 +1,267 @@
+
+body {
+  background:#E4EBF1;
+  
+}
+
+.navbar {
+  background-color: #eff2f9;
+  border-radius: 40px;
+  margin: 15px;
+  padding: 15px;
+  box-shadow: 5px 5px 10px #b5bfc6;
+
+}
+
+.navbar-nav  li a:hover {
+  background-color: rgb(63,251,230);
+  background: linear-gradient(180deg, rgba(63,251,230,1) 0%, rgba(70,162,252,1) 100%);
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent; 
+  -moz-text-fill-color: transparent;
+}
+
+.banner {
+  vertical-align: middle;
+  margin-top: 10%;
+  padding: 100px;
+  background-color:#eff2f9;
+  border-radius: 60px;
+  box-shadow: 5px 5px 10px #b5bfc6 inset;
+}
+
+.banner_2 {
+  vertical-align: middle;
+  margin-top: 2%;
+  padding: 100px;
+  background-color:#eff2f9;
+  
+  border-radius: 60px;
+  box-shadow: 5px 5px 10px #b5bfc6 inset;
+}
+
+#Heading {
+  
+  /*color: rgb(190, 197, 202);*/
+  text-align: center;
+  font-size: 100px;
+  font-weight: bolder;
+  cursor: default;
+}
+
+.gradient {
+  background-color: rgb(63,251,230);
+  background: linear-gradient(180deg, rgba(63,251,230,1) 0%, rgba(70,162,252,1) 100%);
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent; 
+  -moz-text-fill-color: transparent;
+}
+
+#sub_heading {
+  color: rgb(190, 197, 202);
+  font-size: 38px;
+  text-align: center;
+  cursor: default;
+}
+/* #banner {
+  width: 100%;
+  height: 100%;
+} */
+
+#bannersection {
+  margin-top: 0px;
+  position: relative;
+  display: table;
+  width: 100%;
+  height: 100vh;
+}
+.bannercontent {
+  display: table-cell;
+  background-image: url("assets/blue.png");
+  background-size: 100%;
+  color: #FFF;
+  text-align: center;
+  font-weight: normal;
+  padding: 0 3%;
+}
+
+.indicator {
+  margin: auto;
+  width: 30px; 
+  height: 50px;
+  border: 2px solid #fff;
+  border-radius: 50px; 
+  position: relative;
+}
+.indicator:before {
+  content: ""; 
+  position: absolute;
+  width: 10px; 
+  height: 10px;
+  background: #fff; 
+  margin: auto;
+  left: 0; 
+  right: 0;
+  top: 20px; 
+  border-radius: 50%;
+  animation: animate 1s linear infinite; 
+}
+@keyframes animate {
+  0% {
+      opacity: 1; top: 10px;
+  }
+  100% {
+      opacity: 0; top: 30px;
+      transform: scale(0.8);
+  }
+}
+
+.center {
+  text-align: center;
+  margin: auto;
+}
+
+.content {
+  margin: auto;
+  text-align: center;
+  font-weight: bold;
+  font-size: 60px;
+
+}
+
+.text_content {
+  font-size: 30px;
+  color: #030303;
+  text-align: left;
+  cursor: default;
+}
+
+.card {
+  margin: 30px;
+  width: 300px;
+  border-radius: 60px;
+  padding: 30px;
+  box-shadow: 5px 5px 10px #b5bfc6;
+  display: inline-block;
+}
+
+.card-img-top {
+  margin: auto;
+  padding: 20px;
+  width: 50%;
+}
+
+.text_shadow {
+  font-size: 50px;
+  background-color: #030303;
+  color: transparent;
+  text-shadow: 2px 2px 3px rgba(255, 255, 255, 0.5);
+  -webkit-background-clip: text;
+     -moz-background-clip: text;
+          background-clip: text;
+}
+
+.form-control {
+  border-radius: 20px;
+  padding: 20px;
+  box-shadow: 5px 5px 10px #b5bfc6 inset;
+  margin: 2%;
+}
+
+.line {
+  padding-right: 30px;
+  border-right: 2px solid #6e7f8d;
+}
+
+#info {
+  padding: 5%;
+}
+
+.btn {
+  margin: 3%;
+  width: 100px;
+  padding: 10px;
+  border-radius: 20px;
+  background-color: rgb(63,251,230);
+  background: linear-gradient(180deg, rgba(63,251,230,1) 0%, rgba(70,162,252,1) 100%);
+  border: 0px none ;
+}
+
+.dp {
+  width: 250px;
+  border-radius: 20px;
+}
+
+.footer {
+  padding: 35px;
+  color: white;
+  background-color:#6e7f8d;
+  border-radius: 0px;
+  position: relative;
+  bottom: 0px;
+  width: 100%;
+}
+
+.fa {
+  padding: 10px;
+  font-size: 20px;
+  max-width: fit-content;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 50%;
+  align-content: center;
+}
+
+.fa:hover {
+  opacity: 0.7;
+}
+.fa-github {
+background: black;
+color: white;
+}
+
+.fa-linkedin {
+background: #007bb5;
+color: white;
+}
+
+.fa-youtube {
+background: #bb0000;
+color: white;
+}
+
+.fa-instagram {
+background: #125688;
+color: white;
+}
+
+@media (max-width: 500px) {
+  .banner{
+    padding: 60px;
+  }
+
+  .banner_2 {
+    padding: 20px;
+  }
+
+  #Heading {
+    font-size: 60px;
+  }
+
+  #sub_heading {
+    font-size: 28px;
+  }
+
+  .text_content {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 380px) {
+  #Heading {
+    font-size: 50px;
+  }
+}
