@@ -237,11 +237,14 @@ color: white;
 
 @media (max-width: 500px) {
   .banner{
-    padding: 60px;
+    padding: 35px;
+    border-radius: 30px;
   }
 
   .banner_2 {
-    padding: 20px;
+    border-radius: 40px;
+    padding: 17px;
+    box-shadow: 3px 3px 5px #b5bfc6 inset;
   }
 
   #Heading {
@@ -249,12 +252,27 @@ color: white;
   }
 
   #sub_heading {
-    font-size: 28px;
+    font-size: 23px;
   }
 
   .text_content {
-    font-size: 20px;
+    font-size: 17px;
   }
+
+  .text_shadow {
+    font-size: 40px;
+  }
+
+  .navbar {
+    border-radius: 30px;
+    margin: 5px;
+    margin-top: 15px;
+  }
+
+  .content {
+    font-size: 33px;
+  }
+
 }
 
 @media (max-width: 380px) {
