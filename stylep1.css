@@ -4,13 +4,17 @@ body {
   font-family: 'Nunito', sans-serif;
 }
 
+.black {
+  color: black;
+}
+
 .navbar {
   background-color: #eff2f9;
   border-radius: 40px;
   margin: 15px;
   padding: 15px;
   box-shadow: 5px 5px 10px #b5bfc6;
-
+  text-align: center;
 }
 
 .navbar-nav  li a:hover {
@@ -237,7 +241,7 @@ color: white;
 
 @media (max-width: 500px) {
   .banner{
-    padding: 35px;
+    padding: 40px;
     border-radius: 30px;
   }
 
@@ -265,8 +269,8 @@ color: white;
 
   .navbar {
     border-radius: 30px;
-    margin: 5px;
-    margin-top: 15px;
+    margin-left: 5px;
+    margin-right: 5px;
   }
 
   .content {
