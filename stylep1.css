@@ -1,6 +1,6 @@
 
 body {
-  background:#E4EBF1;
+  background:#EFEFEF;
   font-family: 'Nunito', sans-serif;
 }
 
@@ -8,13 +8,39 @@ body {
   color: black;
 }
 
-.navbar {
-  background-color: #eff2f9;
-  border-radius: 40px;
-  margin: 15px;
-  padding: 15px;
-  box-shadow: 5px 5px 10px #b5bfc6;
+.main_color {
+  color: #272727;
+}
+
+.mainpage {
+  display:flex;
+  padding: 0 .5rem;
+  width: 100%;
+  height: 100vh;
   text-align: center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbar {
+  margin-top: 15px;
+  text-align: center;
+}
+
+.navbar-brand {
+  display: none;
+}
+
+.navbar-nav {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.navbar-nav  li {
+  font-size: 18px;
+  font-weight: bold;
+  color: black;
 }
 
 .navbar-nav  li a:hover {
@@ -27,12 +53,12 @@ body {
 }
 
 .banner {
-  vertical-align: middle;
-  margin-top: 10%;
-  padding: 100px;
-  background-color:#eff2f9;
-  border-radius: 60px;
-  box-shadow: 5px 5px 10px #b5bfc6 inset;
+  padding: 5rem 0;
+  flex: 1 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center
 }
 
 .banner_2 {
@@ -45,11 +71,14 @@ body {
   box-shadow: 5px 5px 10px #b5bfc6 inset;
 }
 
-#Heading {
-  
-  /*color: rgb(190, 197, 202);*/
-  text-align: center;
-  font-size: 70px;
+.Heading {
+  font-size: 64px;
+  cursor: default;
+  font-family: "Prompt";
+}
+
+.heading2 {
+  font-size: 54px;
   cursor: default;
   font-family: "Prompt";
 }
@@ -63,10 +92,8 @@ body {
   -moz-text-fill-color: transparent;
 }
 
-#sub_heading {
-  color: rgb(190, 197, 202);
-  font-size: 38px;
-  text-align: center;
+.sub_heading {
+  font-size: 36px;
   cursor: default;
 }
 /* #banner {
@@ -74,53 +101,7 @@ body {
   height: 100%;
 } */
 
-#bannersection {
-  margin-top: 0px;
-  position: relative;
-  display: table;
-  width: 100%;
-  height: 100vh;
-}
-.bannercontent {
-  display: table-cell;
-  background-image: url("assets/blue.png");
-  background-size: 100%;
-  color: #FFF;
-  text-align: center;
-  font-weight: normal;
-  padding: 0 3%;
-}
 
-.indicator {
-  margin: auto;
-  width: 30px; 
-  height: 50px;
-  border: 2px solid #fff;
-  border-radius: 50px; 
-  position: relative;
-}
-.indicator:before {
-  content: ""; 
-  position: absolute;
-  width: 10px; 
-  height: 10px;
-  background: #fff; 
-  margin: auto;
-  left: 0; 
-  right: 0;
-  top: 20px; 
-  border-radius: 50%;
-  animation: animate 1s linear infinite; 
-}
-@keyframes animate {
-  0% {
-      opacity: 1; top: 10px;
-  }
-  100% {
-      opacity: 0; top: 30px;
-      transform: scale(0.8);
-  }
-}
 
 .center {
   text-align: center;
@@ -136,27 +117,17 @@ body {
 
 }
 
+.content_padding {
+  padding: 30px;
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
 .text_content {
-  font-size: 30px;
+  font-size: 22px;
   color: #030303;
   text-align: left;
   cursor: default;
-  
-}
-
-.card {
-  margin: 30px;
-  width: 300px;
-  border-radius: 60px;
-  padding: 30px;
-  box-shadow: 5px 5px 10px #b5bfc6;
-  display: inline-block;
-}
-
-.card-img-top {
-  margin: auto;
-  padding: 20px;
-  width: 50%;
 }
 
 .text_shadow {
@@ -202,8 +173,6 @@ body {
 
 .footer {
   padding: 35px;
-  color: white;
-  background-color:#6e7f8d;
   border-radius: 0px;
   position: relative;
   bottom: 0px;
@@ -222,8 +191,9 @@ body {
 }
 
 .fa:hover {
-  opacity: 0.7;
+  opacity: 0.9;
 }
+
 .fa-github {
 background: black;
 color: white;
@@ -239,7 +209,24 @@ background: #125688;
 color: white;
 }
 
+.fa-gitlab {
+  background: #f86b2e;
+  color: white;
+}
+
 @media (max-width: 500px) {
+
+  .mainpage {
+    display:flex;
+    padding: 0 .5rem;
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+  }
+
   .banner{
     padding: 40px;
     border-radius: 30px;
@@ -251,12 +238,18 @@ color: white;
     box-shadow: 3px 3px 5px #b5bfc6 inset;
   }
 
-  #Heading {
-    font-size: 40px;
+  .Heading {
+    font-size: 36px;
   }
 
-  #sub_heading {
-    font-size: 23px;
+  .sub_heading {
+    font-size: 18px;
+  }
+
+  .content_padding {
+    padding: 25px;
+    padding-left: 20px;
+    padding-right: 20px;
   }
 
   .text_content {
@@ -277,10 +270,20 @@ color: white;
     font-size: 33px;
   }
 
+  .footer {
+    font-size: x-small;
+  }
+
 }
 
 @media (max-width: 380px) {
-  #Heading {
-    font-size: 30px;
+  .Heading {
+    font-size: 26px;
+  }
+
+  .content_padding {
+    padding: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
   }
 }
